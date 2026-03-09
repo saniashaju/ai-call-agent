@@ -135,3 +135,10 @@ Total latency: **~2–3 seconds**
 The system demonstrates an AI hotel receptionist capable of answering booking queries using real-time voice interaction.
 
 
+
+### Demo Video
+See the uploaded demo video for the working prototype.
+
+### Screenshots
+![Execution Screenshot](screenshot1.png)
+
