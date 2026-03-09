@@ -140,5 +140,6 @@ The system demonstrates an AI hotel receptionist capable of answering booking qu
 See the uploaded demo video for the working prototype.
 
 ### Screenshots
-![Execution Screenshot](screenshot1.png)
+Execution Screenshot
+
 
