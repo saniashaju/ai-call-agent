@@ -3,17 +3,17 @@ import speech_recognition as sr
 recognizer = sr.Recognizer()
 
 def listen():
+    try:
+        with sr.Microphone() as source:
+            print("\nListening... Speak now")
 
-    with sr.Microphone() as source:
-        print("\nListening... Speak now")
+            audio = recognizer.listen(source, phrase_time_limit=3)
 
-        audio = recognizer.listen(source, phrase_time_limit=3)
-
-        try:
             text = recognizer.recognize_google(audio)
             print("You said:", text)
             return text
 
-        except:
-            print("Could not understand audio")
-            return ""
+    except Exception:
+        # fallback if microphone fails
+        text = input("\nCustomer (type if mic not working): ")
+        return text
